@@ -1,0 +1,126 @@
+h1{
+    text-align: center;
+    font-size: 22px;
+}
+
+a > div{
+    font-style: italic;
+}
+
+#content{   
+    text-align: center;
+}
+
+div li{
+    list-style: none;
+}
+li> a:link {
+    text-decoration: none;
+    color:black;
+   background-color: wheat;
+   display:block;
+   width: 150px;
+   border:1px solid whitesmoke;
+   margin-bottom: 1px;
+}
+li > a:hover{
+    background-color: red;
+}
+
+li >a:active{
+    background-color: yellow;
+}
+
+article p {
+    font-size: 120%;
+    
+}
+article > h2{
+    font-size: 140%;
+}
+/**/
+#default_info {
+    background-color: brown;
+}
+#childhood {
+    background-color: yellowgreen; 
+}
+#School {
+    background-color: blueviolet;
+}
+#Free_time {
+    background-color: darkorange;
+}
+#University {
+    background-color: purple;
+}
+article a{
+    font-weight: bold;
+}
+body>a{
+    text-transform: uppercase;
+}
+article{
+    border: 1px solid grey;
+}
+
+@media (min-width:992px){
+    #Flexbox{
+    display: flex;
+    flex-wrap: wrap;
+    }
+    .block{
+        flex: 1 20%;
+        margin: 15px;
+    }  
+    
+    p{
+        height: 480px;
+    }
+    #one,#two{
+        height: auto;
+    }
+    .block:nth-child(4), .block:nth-child(5) {
+        flex: 100%;
+   
+    }
+    
+    
+}
+@media (min-width:769px) and (max-width:991px){
+    #Flexbox{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+    .block{
+        flex:1 15%;
+        margin: 10px;
+        width: 33.3%;
+        
+    }
+    .block:nth-child(3){
+        width:42%;
+        
+    }
+    p{
+        height: 480px;
+    }
+    #one,#two{
+        height: auto;
+    }
+    .block:nth-child(4), .block:nth-child(5) {
+        flex: 100%;
+        height: fit-content;
+    }
+    
+           
+
+}
+
+
+@media (max-width:768px) {
+    .block {
+        margin-bottom: 30px;
+    }
+}
