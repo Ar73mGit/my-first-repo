@@ -1,0 +1,64 @@
+/*  basic styles here */
+h1{
+    margin-bottom: 15px;
+    text-align: center;
+}
+*{
+    box-sizing: border-box;
+}
+div>div{
+    float: left;
+    background-color: antiquewhite;
+    border: 3px solid black;
+    clear:right;
+    margin-top: 15px;
+}
+span{
+    width: 30%;
+    height: 35px;
+    background-color: red;
+    float:right;
+    text-align: center;
+    margin-top: 0%;
+    font-weight: bold;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    border-bottom: 2px solid black;
+    border-left: 2px solid black;
+}
+p{
+    clear:right;
+}
+.row {
+width: 100%;
+}
+/* Large devices */
+@media (min-width: 993px) {
+.col-lg-1, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-7, .col-lg-8,
+.col-lg-9, .col-lg-10, .col-lg-11, .col-lg-12 {
+float:left;
+border: 3px solid black;
+margin-left: 2%;
+margin-right: 1%;
+
+
+
+}
+span{
+    width: 30%;
+    height: 35px;
+    background-color: red;
+    float:right;
+    text-align: center;
+    margin-top: 0%;
+    font-weight: bold;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    border-bottom: 2px solid black;
+    border-left: 2px solid black;
+    
+    
+}
+div>div{
+    background-color: antiquewhite;
+    margin-left: 35px;
+    
+}
