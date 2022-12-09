@@ -1,0 +1,276 @@
+<!doctype html>
+<html lang="uk">
+<head>
+    <meta charset="utf-8">
+    <title>Biography</title>
+    <style>
+        h1{
+            text-align: center;
+            font-size: 22px;
+        }
+
+        a > div{
+            font-style: italic;
+        }
+
+        #content{   
+            text-align: center;
+        }
+
+        div li{
+            list-style: none;
+        }
+        li> a:link {
+            text-decoration: none;
+            color:black;
+           background-color: rgb(255, 14, 14);
+           display:block;
+           width: 150px;
+           border:1px solid green;
+           margin-bottom: 1px;
+        }
+        li > a:hover{
+            background-color: rgb(191, 255, 0);
+        }
+
+        li >a:active{
+            background-color: rgb(43, 0, 255);
+        }
+        /*Перевірити чи точно 140 і 120%*/
+        article p {
+            font-size: 120%;
+
+        }
+        article > h2{
+            font-size: 140%;
+        }
+        /**/
+        #default_info p{
+            background-color: grey;
+        }
+        #childhood p{
+            background-color: yellow; 
+        }
+        #School p{
+            background-color: blue;
+        }
+        #Free_time p{
+            background-color: rgb(233, 233, 233);
+        }
+        #University p{
+            background-color: orange;
+        }
+        article a{
+            font-weight: bold;
+        }
+        body>a{
+            text-transform: uppercase;
+        }
+
+        </style>
+</head>
+<body>
+    <h1 id="top">Автобіографія Рудки Артема </h1>
+    <a href = "index.html" title="Назад на персональну сторінку">
+        <div>Назад на головну</div>
+    </a>
+    <h3 id="content">Зміст:</h3>
+    <div>
+        <ul>
+            <li><a href="#default_info" title="Базова інформація">Базова інформація</a></li>
+            <li><a href="#childhood" title="Дитинство">Дитинство</a></li>
+            <li><a href="#School" title="Шкільні роки">Шкільні роки</a></li>
+            <li><a href="#Free_time" title="Поза школою">Поза школою</a></li>
+            <li><a href="#University" title="Університет">Університет</a></li>
+
+        </ul>
+    </div>
+
+
+    <article id="default_info">
+        <h2>Базова інформація</h2>
+
+        <p> Мене звати Артем, мені 18 років. Народився в місті Вижниця. Закінчив 11 класів і зараз навчаюся на першому курсі в Прикарпатському національному університиті імені Василя Стефаника на Інформаційні системи та технологіЇ, окрім навчання займаюся боксом..
+        </p>
+        <a href="#content" title="Назад">Назад</a>
+    </article>
+
+    <article id="childhood">
+        <h2>Дитинство</h2>
+        <p>Моє дитинство було веселим, я дуже багато часу проводив з друзями і нам було весело, грав в комп'ютерні та цікавився збірками пк.
+
+        </p>
+        <a href="#content" title="Назад">Назад</a>
+     </article>
+
+    <article id="School">
+        <h2>Шкільні роки</h2>
+        <p>Шкільні роки були веселі, в школі я не був відмінником але вчився непогано, особливо любив предмети такі як математика та інформатика. 
+        </p>
+        <a href="#content" title="Назад">Назад</a>
+ </article>
+
+ <article id="Free_time">
+    <h2>Поза школою</h2>
+    <p>Поза школою  я грав в комп'ютерні ігри, проводив багато часу з друзями, та займався боксом. 
+    </p>
+    <a href="#content" title="Назад">Назад</a>
+</article>
+
+<article id="University">
+    <h2>Університет</h2>
+<p> Цього року я поступив до Університету, навчання тут важче ніж в школі, але більше знань, Вибрав я ІТ сферу в якій в майбутньому хочу працювати,
+</p>
+<a href="#content" title="Назад">Назад</a>
+</article>
+    <div><hr></div>
+<a href="#top" title="Повернутися на початок">Уверх</a>
+
+</body>
+    </html>
+ 82  
+lab2/friends.html
+@@ -0,0 +1,82 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>friends</title>
+    <style>
+      h1{
+        text-align: center;
+        font-size: 22px;
+      }
+      a>div{
+        font-style: italic;
+      }
+      h2{
+        text-align: center;
+      }
+      tr>th{
+        text-align: center;
+        background-color: yellow;
+        font-weight: bold;
+      }
+
+      tr>td:nth-child(odd){
+        background-color: grey;
+      }
+      tr>td:nth-child(even){
+        background-color: burlywood         ;
+      }
+      tr>td:nth-child(5){
+        text-align: end;
+      }
+      table, th, td {
+         border: 1px solid;
+        }
+    </style>
+</head>
+<body>
+    <h1>Друзі Рудки Артема Володимировича </h1>
+    <a href = "index.html" title="Назад на персональну сторінку">
+      <div>Назад на головну</div>
+    </a>
+<h2>Мої друзі</h2>
+<table>
+   <caption>Мої Друзі</caption>
+    <tr>
+        <th>Bale</th>
+        <th>Alex</th>
+        <th>12.02.1999</th>
+        <th>Baker Street</th>
+        <th>+38098000001</th>
+      </tr>
+      <tr>
+        <td>Johnson</td>
+        <td>Carl</td>
+        <td>12.02.1992</td>
+        <td>Grove street</td>
+        <td>+380970000002</td>
+      </tr>
+       <tr>
+        <td>Holland</td>
+        <td>Tom</td>
+        <td>01.07.1996</td>
+        <td>New-york street</td>
+        <td>+380960000003</td>
+      </tr>
+       <tr>
+        <td>Poter </td>
+        <td>Harry</td>
+        <td>15.08.2001</td>
+        <td>Oxford street</td>
+        <td>+380970000003</td>
+      </tr>
+       <tr>
+        <td>Johnson</td>
+        <td>Dwayn</td>
+        <td>02.05.1972</td>
+        <td>walker street</td>
+        <td>+380980000004</td>
+</table>
+</body>
+</html>
+ 59  
+lab2/gallery.html
+@@ -0,0 +1,59 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Gallery</title>
+    <style>
+       h1{
+            text-align: center;
+            font-size: 20px;
+        }
+        a>div{
+            font-style: italic;
+        }
+        h2{
+            text-align: center;
+            font-size: 24px;
+
+        }
+        /*70% від h2 потрібно відкорегувати*/
+        #class1{
+            text-align: center;
+            font-size: 16.8px;
+        }
+        /*130% від h2 потрібно відкорегувати*/
+        #class2{
+            text-align: center;
+            font-size:31.2px;
+        }
+        /*130% від class2 потрібно відкорегувати*/
+        #class3{
+            text-align: center;
+            font-size: 40.56px;
+        }
+       /* Потрібно помістити зображення в центр*/
+      img {
+        display: block;
+  margin-left: auto;
+  margin-right: auto;
+
+      }
+
+
+    </style>
+</head>
+<body>
+    <h1>Галерея Рудки Артема </h1>
+    <a href = "index.html" title="Назад на персональну сторінку">
+        <div>Назад на головну</div>
+    </a>
+    <h2>Мої Зображення</h2>
+    <h3 id="class1">Зображення у цій папці</h3>
+    <p><img src="640x480.gif" width="640" height="480" alt="прямокутник розміром 640x480"></p>
+    <h3 id="class2">Зображення y папці</h3>
+    <p><img src="images/640x480.gif" width="640" height="480" alt="прямокутник розміром 640x480"></p>
+    <h3 id="class3">Зображення онлайн</h3>
+    <p><img src="https://place-hold.it/1280x1024" width="1280" height="1024" alt="прямокутник розміром 1280x1024"></p>
+
+</body>
+</html>
